@@ -1,0 +1,21 @@
+<HTML> 
+<BODY>
+<H1 onclick="kobe(this);"> ### ERROR 404'" </H1>
+<H2 onclick="kobe(this)">Your computer will shut down in 1minute </H2>
+<div id="sekcija" onclikc="marts(this)"></div>
+<body {background-image: url(http://i3.kym-cdn.com/photos/images/newsfeed/000/247/207$
+}/body>
+
+</BODY>
+
+<script>
+function kobe(obj) {
+var adr =document.getElementById(obj)
+         adr.innerHTM='ok';
+
+{background-image: url(http://i3.kym-cdn.com/photos/images/newsfeed/000/247/207/813.gif);}
+}
+</script>
+</HTML> 
+
+

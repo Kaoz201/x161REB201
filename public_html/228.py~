@@ -1,0 +1,23 @@
+print '''<html>
+for n in nvalues:
+    arc = "0"
+    seg = n/total * 360 + seg
+    if ((n/total * 360) > 180):
+        arc = "1"
+    radseg = math.radians(seg)
+    nextx = int(math.cos(radseg) * radius)
+    nexty = int(math.sin(radseg) * radius)
+ 
+    L.append('<path d="M '+str(startx)+','+str(starty) + ' l '+str(lastx)+','+str(-(lasty))+' a150,150 0 ' + arc + ',0 '+str(nextx - lastx)+','+str(-(nexty - lasty))+ ' z" \n')
+    L.append('fill="'+colors[i]+'" stroke="' + bordercolor + '" stroke-width="0.5" stroke-linejoin="round" />\n')
+    L.append('<rect x="375" y="'+ str(ykey) + '" width="40" height="30" fill="'+colors[i] + '" stroke="black" stroke-width="0.5"/>\n')
+    ykey = ykey + 35
+    lastx = nextx
+    lasty = nexty
+    i += 1
+L.append('</svg>')
+output = open(svgfile,'228.svg')
+output.writelines(L)
+output.close()
+
+print '''</html>'''
